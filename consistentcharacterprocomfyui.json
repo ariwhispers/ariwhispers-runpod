@@ -1,0 +1,1197 @@
+{
+  "132": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "140": {
+    "inputs": {
+      "unet_name": "flux1-dev.safetensors",
+      "weight_dtype": "fp8_e4m3fn_fast"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load FLUX original Model"
+    }
+  },
+  "142": {
+    "inputs": {
+      "object_to_patch": "diffusion_model",
+      "residual_diff_threshold": 0.05900000000000001,
+      "start": 0,
+      "end": 1,
+      "max_consecutive_cache_hits": 0,
+      "model": [
+        "366",
+        0
+      ]
+    },
+    "class_type": "ApplyFBCacheOnModel",
+    "_meta": {
+      "title": "Apply First Block Cache"
+    }
+  },
+  "143": {
+    "inputs": {
+      "clip_name1": "t5xxl_fp16.safetensors",
+      "clip_name2": "clip_l.safetensors",
+      "type": "flux",
+      "device": "default"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "DualCLIPLoader"
+    }
+  },
+  "168": {
+    "inputs": {
+      "images": [
+        "246",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "171": {
+    "inputs": {
+      "image": "b8c3c701.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Image 1"
+    }
+  },
+  "189": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "246",
+        1
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "246": {
+    "inputs": {
+      "prompt": "Your job is to show the character with a neutral facial expression in a close-up front-facing portrait. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to depict the character smiling softly with closed lips in a front-facing close-up. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to show the character with a subtle open-mouth smile in a close-up front-facing portrait. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to capture the character with a serious and composed facial expression in a close-up front-facing shot. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to present the character with a curious expression, eyes widened slightly, in a front-facing close-up. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to depict the character laughing lightly with eyes squinting in a front-facing close-up shot. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to show the character with a subtle eyebrow raise in a close-up front-facing portrait. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to frame the character with a confident expression, lips closed and chin slightly lifted, in a close-up front-facing portrait. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to present the character with an introspective gaze, slightly downturned eyes, in a front-facing close-up portrait. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to depict the character with a look of wonder or awe, eyes slightly widened, in a close-up front-facing portrait. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to show the character blinking mid-frame in a close-up front-facing shot. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to capture the character with eyes looking directly at the camera and a calm expression in a front-facing close-up. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to frame the character with a subtle smirk on her lips in a close-up front-facing portrait. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to show the character with a playful wink in a close-up front-facing portrait. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to depict the character showing a slight pout in a close-up front-facing shot. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to portray the character with a dreamy gaze looking past the camera in a front-facing close-up portrait. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to depict the character with a surprised expression, mouth gently open, in a front-facing close-up. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to frame the character with a slight head tilt and a relaxed smile in a close-up front-facing shot. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to capture the character with tears in her eyes and a soft expression in a front-facing close-up. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\nYour job is to show the character gently biting her lower lip in a close-up front-facing portrait. Maintain all other elements — hazel eyes, medium warm brown skin tone, smooth sage green hijab, modest two-tone outfit (sage and cream), frontal soft lighting, studio-gray backdrop.\\n",
+      "input_type": "image",
+      "model_version": "gemini-2.0-flash-exp-image-generation",
+      "operation_mode": "generate_images",
+      "chat_mode": false,
+      "clear_history": false,
+      "Additional_Context": "",
+      "api_key": "AIzaSyC200b5g1rSLmAe369QcGPvnYH3XHyRZps",
+      "max_output_tokens": 8192,
+      "temperature": 0.4,
+      "structured_output": false,
+      "max_images": 6,
+      "batch_count": 1,
+      "seed": 1232,
+      "images": [
+        "171",
+        0
+      ]
+    },
+    "class_type": "GeminiFlash",
+    "_meta": {
+      "title": "Gemini Flash 2.0 Experimental"
+    }
+  },
+  "290": {
+    "inputs": {
+      "control_net_name": "FLUX.1/jasperai-dev-Upscaler/diffusion_pytorch_model.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "Load ControlNet Model"
+    }
+  },
+  "319": {
+    "inputs": {
+      "scheduler": "normal"
+    },
+    "class_type": "Scheduler Selector",
+    "_meta": {
+      "title": "Scheduler Selector"
+    }
+  },
+  "320": {
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "class_type": "Sampler Selector",
+    "_meta": {
+      "title": "Sampler Selector"
+    }
+  },
+  "322": {
+    "inputs": {
+      "model_name": "bbox/hand_yolov8s.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "Hands Detector"
+    }
+  },
+  "323": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "Face Detector"
+    }
+  },
+  "327": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAMLoader (Impact)"
+    }
+  },
+  "328": {
+    "inputs": {
+      "model_name": "bbox/Eyeful_v2-Paired.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "Eyes Detector"
+    }
+  },
+  "329": {
+    "inputs": {
+      "model_name": "segm/hair_yolov8n-seg_60.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "Hair Detector"
+    }
+  },
+  "331": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "334",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "332": {
+    "inputs": {
+      "guide_size": 512,
+      "guide_size_for": true,
+      "max_size": 1024,
+      "seed": 404103378914150,
+      "steps": 20,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 0.15000000000000002,
+      "feather": 5,
+      "noise_mask": true,
+      "force_inpaint": true,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 10,
+      "bbox_crop_factor": 3,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 1,
+      "wildcard": "hands relaxed at sides, soft finger curvature, subtle knuckle definition and skin tone matching facial complexion",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 20,
+      "tiled_encode": false,
+      "tiled_decode": false,
+      "image": [
+        "342",
+        0
+      ],
+      "model": [
+        "142",
+        0
+      ],
+      "clip": [
+        "366",
+        1
+      ],
+      "vae": [
+        "132",
+        0
+      ],
+      "positive": [
+        "355",
+        0
+      ],
+      "negative": [
+        "353",
+        0
+      ],
+      "bbox_detector": [
+        "322",
+        0
+      ],
+      "sam_model_opt": [
+        "327",
+        0
+      ],
+      "segm_detector_opt": [
+        "322",
+        1
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "Mani"
+    }
+  },
+  "333": {
+    "inputs": {
+      "rgthree_comparer": {
+        "images": [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_keiej_00011_.png&type=temp&subfolder=&rand=0.09664631840818072"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_keiej_00012_.png&type=temp&subfolder=&rand=0.8624315769740306"
+          }
+        ]
+      },
+      "image_a": [
+        "334",
+        0
+      ],
+      "image_b": [
+        "342",
+        0
+      ]
+    },
+    "class_type": "Image Comparer (rgthree)",
+    "_meta": {
+      "title": "Image Comparer (rgthree)"
+    }
+  },
+  "334": {
+    "inputs": {
+      "guide_size": 512,
+      "guide_size_for": true,
+      "max_size": 1024,
+      "seed": 511920063884767,
+      "steps": 20,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 0.3500000000000001,
+      "feather": 5,
+      "noise_mask": true,
+      "force_inpaint": true,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 10,
+      "bbox_crop_factor": 3,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "hyperdetail hair",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 20,
+      "tiled_encode": false,
+      "tiled_decode": false,
+      "image": [
+        "335",
+        0
+      ],
+      "model": [
+        "142",
+        0
+      ],
+      "clip": [
+        "366",
+        1
+      ],
+      "vae": [
+        "132",
+        0
+      ],
+      "positive": [
+        "355",
+        0
+      ],
+      "negative": [
+        "353",
+        0
+      ],
+      "bbox_detector": [
+        "329",
+        0
+      ],
+      "sam_model_opt": [
+        "327",
+        0
+      ],
+      "segm_detector_opt": [
+        "329",
+        1
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "capelli"
+    }
+  },
+  "335": {
+    "inputs": {
+      "guide_size": 512,
+      "guide_size_for": true,
+      "max_size": 1024,
+      "seed": 1082983043594303,
+      "steps": 20,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 0.15000000000000002,
+      "feather": 5,
+      "noise_mask": true,
+      "force_inpaint": true,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 10,
+      "bbox_crop_factor": 3,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "hyperdetail skin",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 20,
+      "tiled_encode": false,
+      "tiled_decode": false,
+      "image": [
+        "336",
+        0
+      ],
+      "model": [
+        "142",
+        0
+      ],
+      "clip": [
+        "366",
+        1
+      ],
+      "vae": [
+        "132",
+        0
+      ],
+      "positive": [
+        "355",
+        0
+      ],
+      "negative": [
+        "353",
+        0
+      ],
+      "bbox_detector": [
+        "323",
+        0
+      ],
+      "sam_model_opt": [
+        "327",
+        0
+      ],
+      "segm_detector_opt": [
+        "323",
+        1
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "faccia"
+    }
+  },
+  "336": {
+    "inputs": {
+      "guide_size": 512,
+      "guide_size_for": true,
+      "max_size": 1024,
+      "seed": 203982350724902,
+      "steps": 20,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 0.15000000000000002,
+      "feather": 5,
+      "noise_mask": true,
+      "force_inpaint": true,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 10,
+      "bbox_crop_factor": 3,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "hyperdetail eyes",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 20,
+      "tiled_encode": false,
+      "tiled_decode": false,
+      "image": [
+        "332",
+        0
+      ],
+      "model": [
+        "142",
+        0
+      ],
+      "clip": [
+        "366",
+        1
+      ],
+      "vae": [
+        "132",
+        0
+      ],
+      "positive": [
+        "355",
+        0
+      ],
+      "negative": [
+        "353",
+        0
+      ],
+      "bbox_detector": [
+        "328",
+        0
+      ],
+      "sam_model_opt": [
+        "327",
+        0
+      ],
+      "segm_detector_opt": [
+        "328",
+        1
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "Occhi"
+    }
+  },
+  "337": {
+    "inputs": {
+      "images": [
+        "332",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "mani"
+    }
+  },
+  "338": {
+    "inputs": {
+      "images": [
+        "336",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "occhi"
+    }
+  },
+  "339": {
+    "inputs": {
+      "images": [
+        "335",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "faccia"
+    }
+  },
+  "340": {
+    "inputs": {
+      "images": [
+        "334",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "capelli"
+    }
+  },
+  "342": {
+    "inputs": {
+      "any_04": [
+        "246",
+        1
+      ]
+    },
+    "class_type": "Any Switch (rgthree)",
+    "_meta": {
+      "title": "Height Switch"
+    }
+  },
+  "353": {
+    "inputs": {
+      "conditioning": [
+        "354",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "354": {
+    "inputs": {
+      "text": "cdscsd",
+      "clip": [
+        "366",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "355": {
+    "inputs": {
+      "clip": [
+        "366",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "366": {
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "Flux\\Fashion\\fur_detailer_v1.safetensors",
+        "strength": 1
+      },
+      "lora_2": {
+        "on": true,
+        "lora": "FluxOLD\\cute 3d.safetensors",
+        "strength": 0.4
+      },
+      "lora_3": {
+        "on": true,
+        "lora": "Flux\\Stile\\LH_Pixar3D_flx.safetensors",
+        "strength": 0.38
+      },
+      "lora_4": {
+        "on": false,
+        "lora": "Flux\\Light\\hair light backlight style v1.safetensors",
+        "strength": 0.25
+      },
+      "lora_5": {
+        "on": false,
+        "lora": "Flux\\Stile\\R3troVintagePolaroid Flux Lora.safetensors",
+        "strength": 0.15
+      },
+      "lora_6": {
+        "on": false,
+        "lora": "Flux\\Stile\\Real_Aesthetic_Spectrum.safetensors",
+        "strength": 0.25
+      },
+      "lora_7": {
+        "on": false,
+        "lora": "Flux\\Stile\\Nature_Fusion.safetensors",
+        "strength": -0.06666259765625
+      },
+      "lora_8": {
+        "on": false,
+        "lora": "Flux\\Stile\\Cinematic Film style v1.0.safetensors",
+        "strength": 0.55
+      },
+      "lora_9": {
+        "on": false,
+        "lora": "Flux\\Talent\\MS01 Martin Schoeller.safetensors",
+        "strength": 0.01
+      },
+      "lora_10": {
+        "on": false,
+        "lora": "Flux\\Talent\\Natalie_Portman_V_Runpod-000020.safetensors",
+        "strength": 0.78
+      },
+      "lora_11": {
+        "on": false,
+        "lora": "FluxOLD\\detailed city by Kanto.safetensors",
+        "strength": 0.21
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "140",
+        0
+      ],
+      "clip": [
+        "143",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)",
+    "_meta": {
+      "title": "FLUX LoRA's Loader"
+    }
+  },
+  "371": {
+    "inputs": {
+      "text_input": "",
+      "task": "more_detailed_caption",
+      "fill_mask": true,
+      "keep_model_loaded": false,
+      "max_new_tokens": 1024,
+      "num_beams": 10,
+      "do_sample": true,
+      "output_mask_select": "",
+      "seed": 1006283349913481,
+      "image": [
+        "391",
+        0
+      ],
+      "florence2_model": [
+        "400",
+        0
+      ]
+    },
+    "class_type": "Florence2Run",
+    "_meta": {
+      "title": "Florence2Run"
+    }
+  },
+  "374": {
+    "inputs": {
+      "image": [
+        "383",
+        0
+      ]
+    },
+    "class_type": "Get resolution [Crystools]",
+    "_meta": {
+      "title": "🪛After Crop Size"
+    }
+  },
+  "375": {
+    "inputs": {
+      "image": [
+        "398",
+        0
+      ]
+    },
+    "class_type": "Get resolution [Crystools]",
+    "_meta": {
+      "title": "🪛Size for CNet"
+    }
+  },
+  "376": {
+    "inputs": {
+      "image": [
+        "391",
+        0
+      ]
+    },
+    "class_type": "Get resolution [Crystools]",
+    "_meta": {
+      "title": "🪛Size for CNet"
+    }
+  },
+  "377": {
+    "inputs": {
+      "image": [
+        "391",
+        0
+      ]
+    },
+    "class_type": "Get resolution [Crystools]",
+    "_meta": {
+      "title": "🪛 Res to latent"
+    }
+  },
+  "378": {
+    "inputs": {
+      "image": [
+        "393",
+        0
+      ]
+    },
+    "class_type": "Get resolution [Crystools]",
+    "_meta": {
+      "title": "🪛Size for CNet"
+    }
+  },
+  "380": {
+    "inputs": {
+      "image": [
+        "399",
+        0
+      ]
+    },
+    "class_type": "Get resolution [Crystools]",
+    "_meta": {
+      "title": "🪛ScaleToPix. Res"
+    }
+  },
+  "381": {
+    "inputs": {
+      "images": [
+        "391",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image - for encoder->Latent"
+    }
+  },
+  "383": {
+    "inputs": {
+      "measurement": "Pixels",
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "bottom": 0,
+      "image": [
+        "342",
+        0
+      ]
+    },
+    "class_type": "Image Inset Crop (rgthree)",
+    "_meta": {
+      "title": "Image Inset Crop (rgthree)"
+    }
+  },
+  "386": {
+    "inputs": {
+      "clip_l": [
+        "412",
+        0
+      ],
+      "t5xxl": [
+        "412",
+        0
+      ],
+      "guidance": 2.1,
+      "clip": [
+        "366",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncodeFlux",
+    "_meta": {
+      "title": "CLIPTextEncodeFlux"
+    }
+  },
+  "387": {
+    "inputs": {
+      "text": "The image is a plain, light blue color. It appears to be a solid, solid color with a smooth texture. The color is a deep, rich shade of blue with a subtle sheen. The background is a solid shade of the same color as the rest of the image. The image has a simple, minimalistic design with no other elements present.",
+      "anything": [
+        "371",
+        2
+      ]
+    },
+    "class_type": "easy showAnything",
+    "_meta": {
+      "title": "Show Any"
+    }
+  },
+  "389": {
+    "inputs": {
+      "rgthree_comparer": {
+        "images": [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_eblnh_00051_.png&type=temp&subfolder=&rand=0.4107448400262219"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_eblnh_00052_.png&type=temp&subfolder=&rand=0.755156741709891"
+          }
+        ]
+      },
+      "image_a": [
+        "391",
+        0
+      ],
+      "image_b": [
+        "396",
+        0
+      ]
+    },
+    "class_type": "Image Comparer (rgthree)",
+    "_meta": {
+      "title": "Base IMG/CNet upscale"
+    }
+  },
+  "390": {
+    "inputs": {
+      "images": [
+        "393",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image - for CNet"
+    }
+  },
+  "391": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "upscale_method": "lanczos",
+      "keep_proportion": true,
+      "divisible_by": 16,
+      "crop": "disabled",
+      "image": [
+        "399",
+        0
+      ],
+      "width_input": [
+        "380",
+        0
+      ],
+      "height_input": [
+        "380",
+        1
+      ]
+    },
+    "class_type": "ImageResizeKJ",
+    "_meta": {
+      "title": "Resize For Latent"
+    }
+  },
+  "393": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "upscale_method": "lanczos",
+      "keep_proportion": true,
+      "divisible_by": 16,
+      "crop": "disabled",
+      "image": [
+        "398",
+        0
+      ],
+      "width_input": [
+        "375",
+        0
+      ],
+      "height_input": [
+        "375",
+        1
+      ]
+    },
+    "class_type": "ImageResizeKJ",
+    "_meta": {
+      "title": "Resize For Latent"
+    }
+  },
+  "394": {
+    "inputs": {
+      "max_shift": 1.15,
+      "base_shift": 0.5,
+      "width": [
+        "377",
+        0
+      ],
+      "height": [
+        "377",
+        1
+      ],
+      "model": [
+        "142",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingFlux",
+    "_meta": {
+      "title": "ModelSamplingFlux"
+    }
+  },
+  "395": {
+    "inputs": {
+      "pixels": [
+        "391",
+        0
+      ],
+      "vae": [
+        "132",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "396": {
+    "inputs": {
+      "samples": [
+        "414",
+        0
+      ],
+      "vae": [
+        "132",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "398": {
+    "inputs": {
+      "upscale_method": "lanczos",
+      "megapixels": 1,
+      "image": [
+        "383",
+        0
+      ]
+    },
+    "class_type": "ImageScaleToTotalPixels",
+    "_meta": {
+      "title": "Resize For CNet"
+    }
+  },
+  "399": {
+    "inputs": {
+      "upscale_method": "lanczos",
+      "megapixels": 1,
+      "image": [
+        "383",
+        0
+      ]
+    },
+    "class_type": "ImageScaleToTotalPixels",
+    "_meta": {
+      "title": "Resize For Latent"
+    }
+  },
+  "400": {
+    "inputs": {
+      "model": "microsoft/Florence-2-large",
+      "precision": "fp32",
+      "attention": "sdpa"
+    },
+    "class_type": "DownloadAndLoadFlorence2Model",
+    "_meta": {
+      "title": "DownloadAndLoadFlorence2Model"
+    }
+  },
+  "401": {
+    "inputs": {
+      "prompt": "animated character that resembles a small, furry creature. It is anthropomorphic and covered in vibrant blue fur, with a fluffy texture that adds a soft and plush-like appearance. The character has large, expressive eyes with dark pupils, a small white snout, and a serious or grumpy expression. It stands upright with its arms crossed, conveying an attitude of stubbornness or displeasure. The lighting is soft and directional, casting gentle shadows that enhance the 3D modeling and fur detail. The background is a smooth, gradient dark blue that provides a clean contrast to the vivid blue of the character. The style is reminiscent of high-quality animated feature films, with a polished, cartoonish aesthetic."
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "406": {
+    "inputs": {
+      "conditioning": [
+        "409",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "409": {
+    "inputs": {
+      "clip_l": "",
+      "t5xxl": "",
+      "guidance": 3.5,
+      "clip": [
+        "366",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncodeFlux",
+    "_meta": {
+      "title": "CLIPTextEncodeFlux"
+    }
+  },
+  "412": {
+    "inputs": {
+      "Input": 2,
+      "text1": [
+        "401",
+        0
+      ],
+      "text2": [
+        "371",
+        2
+      ]
+    },
+    "class_type": "CR Text Input Switch",
+    "_meta": {
+      "title": "🔀 CR Text Input Switch"
+    }
+  },
+  "414": {
+    "inputs": {
+      "seed": 846451136695867,
+      "steps": 22,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 0.25000000000000006,
+      "model": [
+        "394",
+        0
+      ],
+      "positive": [
+        "420",
+        0
+      ],
+      "negative": [
+        "420",
+        1
+      ],
+      "latent_image": [
+        "395",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "420": {
+    "inputs": {
+      "strength": 0.7000000000000002,
+      "start_percent": 0,
+      "end_percent": 0.9500000000000002,
+      "positive": [
+        "406",
+        0
+      ],
+      "negative": [
+        "406",
+        0
+      ],
+      "control_net": [
+        "290",
+        0
+      ],
+      "image": [
+        "393",
+        0
+      ],
+      "vae": [
+        "132",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced",
+    "_meta": {
+      "title": "Apply ControlNet"
+    }
+  },
+  "431": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "396",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "434": {
+    "inputs": {
+      "image": [
+        "334",
+        0
+      ]
+    },
+    "class_type": "ImageUpscaleWithModel",
+    "_meta": {
+      "title": "Upscale Image (using Model)"
+    }
+  },
+  "435": {
+    "inputs": {
+      "images": [
+        "434",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "436": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "434",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}
